@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Flip UG</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/reveal.css" />
+    <link rel="stylesheet" href="css/theme/hft.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/monokai.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "css/print/pdf.css"
+        : "css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-image="https://media.giphy.com/media/2aLiVCqTZmxwXeRfMh/giphy.gif"
+        >
+          <h1 class="title">Flip UG Current status</h1>
+        </section>
+
+        <!-- Ziele -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/guJZ84aiImq5i/giphy.gif"
+          >
+            <h1 class="title">Flip UG Ziele</h1>
+          </section>
+          <section>
+            <ul>
+              <li>yas</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Tooling -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/LF93odOI8LZDi/giphy.gif"
+          >
+            <h1 class="title">Tooling</h1>
+          </section>
+          <section>
+            <h3>Nice to have</h3>
+            <ul>
+              <li>Slack</li>
+              <li>Dashboards (Grafana, Kibana)</li>
+              <li>Sonarcube / Healthchecks / Komplexität</li>
+              <li>Clean vs Performance</li>
+              <li>Lokales Development</li>
+            </ul>
+          </section>
+          <section>
+            <h3>What we have</h3>
+            <ul>
+              <li>Messenger der für nicht desktop-workers gemacht wurde 😉</li>
+              <li>Flip CLI</li>
+              <li>uvm.</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Bug reporting -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/o8elHkOZR56g0/giphy.gif"
+          >
+            <h1 class="title">Bug reports</h1>
+          </section>
+          <section>
+            <h3>Nice to have</h3>
+            <ul>
+              <li>Zendesk</li>
+              <li>Gibt es einen Prozess? Was ist ein Bug?</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- culture -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/DQ94PFPPETZCM/giphy.gif"
+          >
+            <h1 class="title">Culture</h1>
+          </section>
+          <section>
+            <ul>
+              <li>Wochendende = Freizeit</li>
+              <li>Keine Hierarchien: Es kann keinen Lead geben?</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- tech stack -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/1TSHTZvHoblaCLm6vM/giphy.gif"
+          >
+            <h1 class="title">Techstack</h1>
+          </section>
+          <section>
+            <h3>PWA</h3>
+            <ul>
+              <li>Fehleranfällig für unterschiedliche Browser</li>
+              <li>Push nur auf Android</li>
+              <li>Reicht für unserern Use-Case eigentlich?</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Apps</h3>
+            <ul>
+              <li>Könnte man auch mit Web Tech umsetzen</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Backend</h3>
+            <ul>
+              <li>CQRS</li>
+              <li>EventSourcing</li>
+              <li>SQL</li>
+              <li>Elixir</li>
+              <li>Kotlin</li>
+              <li>Kubernetes</li>
+              <li>Keycloak</li>
+              <li>REST</li>
+              <li>Websockets</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Kosten und Wartung?</h3>
+            <ul>
+              <li>Können wir die Rechnung bezahlen ohne Telekom Bonus?</li>
+              <li>Reichen uns vielleicht 1FE, 1BE, 1DB Container?</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Deployment Prozess -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/xT9IgqYHYClWb2eZnG/giphy.gif"
+          >
+            <h1 class="title">Deployment Prozess</h1>
+          </section>
+          <section>
+            <ul>
+              <li>Im Laufe der Woche gab es kein Daily ohne Kommentar zum DP</li>
+              <li>Kann man das aufbrechen?</li>
+              <li>Was muss wann deployed werden?</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Development Prozess -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/kwEmwFUWO5Ety/giphy.gif"
+          >
+            <h1 class="title">Development Prozess</h1>
+          </section>
+          <section>
+            <img src="./img/IMG_20191113_115441.jpeg" />
+          </section>
+          <section>
+            <h3>Ziele Development</h3>
+            <ul>
+              <li>Qualität oder Quantität?</li>
+              <li>Qualität: DoD, Reviews, Tests, Diagramme, Architektur</li>
+              <li>Quantität: Keine Tests, weg-werf code, fehleranfällig</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Facts</h3>
+            <ul>
+              <li>Als Developer interessiert mit Prod erst mal nicht</li>
+              <li>Trunk-based Dev gilt im Moment als modern</li>
+              <li>docker-compose -> Local Development</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Tickets</h3>
+            <ul>
+              <li>Muss sich jeder selbst an die Nase fassen.</li>
+              <li>Schneiden, schneiden, schneiden</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Skalierung -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/Vi1YAP4jJen4I/giphy.gif"
+          >
+            <h1 class="title">Skalierung</h1>
+          </section>
+          <section>
+            <ul>
+              <li>Wann ist Skalierung tatsächlich ein Problem?</li>
+              <li>Haben wir das Problem JETZ AKTUELL IM MOMENT??? Haben wir einen Kunden?</li>
+            </ul>
+          </section>
+        </section>
+
+        <!-- Management -->
+        <section>
+          <section
+            data-background-image="https://media.giphy.com/media/TCDHJPxeWgTsY/giphy.gif"
+          >
+            <h1 class="title">Management</h1>
+            <h3 class="title">Wann wird WAS WARUM gemacht?</h3>
+          </section>
+          <section>
+            <ul>
+              <li>
+                Gibt es überhaupt high-prio? Warum ist das als Dev für mich
+                wichtig?
+              </li>
+              <li>Wie kommen wir von einer Idee zu einer richtigen Anforderung? (Analytics!)</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: "slide", // none/fade/slide/convex/concave/zoom
+
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [
+          {
+            src: "lib/js/classList.js",
+            condition: function() {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: "plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src: "plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          { src: "plugin/search/search.js", async: true },
+          { src: "plugin/zoom-js/zoom.js", async: true },
+          { src: "plugin/notes/notes.js", async: true }
+        ]
+      });
+    </script>
+  </body>
+</html>
